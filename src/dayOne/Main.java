@@ -1,4 +1,6 @@
 
+import dayTwo.Address;
+
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -17,8 +19,11 @@ public class Main {
 //        String gender = sc3.nextLine();
 //        Cityzen citizen1 = new Cityzen(name, age, gender);
         // data is hardcode
-        Cityzen citizen1 = new Cityzen("Duyen", 38, "Nu");
-        citizen1.showInfo();
+        Address add1 = new Address("Cau giay", "Cau giay", "Xuan thuy", "Ha Noi");
+        Cityzen citizen1 = new Cityzen("Duyen", 38, "Nu", add1);
+       citizen1.getAdd1().getCity();
+
+
 
     }
 }
